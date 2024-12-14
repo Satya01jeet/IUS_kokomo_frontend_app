@@ -35,6 +35,16 @@ module.exports = {
       borderRadius: {
         "11xl": "30px",
       },
+      container: {
+        center: true,
+        padding:{
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
     },
     fontSize: {
       smi: "13px",
@@ -46,12 +56,11 @@ module.exports = {
       inherit: "inherit",
     },
     screens: {
-      lg: {
-        max: "1400px",
-      },
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
-  },
-  corePlugins: {
-    preflight: false,
   },
 };

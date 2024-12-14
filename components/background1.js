@@ -1,136 +1,130 @@
+import { div } from "framer-motion/client";
 import Image from "next/image";
 import PropTypes from "prop-types";
 
 const Background1 = ({ className = "" }) => {
   return (
-    <div
-      className={`absolute top-[0px] left-[0px] bg-white w-[1440px] h-[317.1px] text-left text-6xl text-slategray font-inter ${className}`}
-    >
-      <Image
-        className="absolute top-[64px] left-[80px] w-[249px] h-[110.1px] overflow-hidden object-cover"
-        width={249}
-        height={110}
-        alt=""
-        src="/color3dfull20colorpng@2x.png"
-      />
-      <div className="absolute top-[194.1px] left-[80px] text-base leading-[22.4px]">
-        <p className="m-0">SWFL’s luxury boat club providing the pure joy of</p>
-        <p className="m-0">boating without the hassles.</p>
-      </div>
-      <div className="absolute top-[64px] left-[636.9px] leading-[32.5px] font-montserrat text-midnightblue">
-        Fleet
-      </div>
-      <li className="absolute top-[116.5px] left-[636.9px] w-[137.4px] h-[152.6px] text-sm">
-        <div className="absolute top-[0px] left-[0px] w-[137.4px] h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-[137.4px] h-[19.6px] text-[inherit]">
-            <div className="absolute top-[-1px] left-[0px] leading-[19.6px]">
-              50' Memory Maker
-            </div>
-          </a>
-        </div>
-        <div className="absolute top-[26.6px] left-[0px] w-[137.4px] h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-[137.4px] h-[19.6px] text-[inherit]">
-            <div className="absolute top-[-1px] left-[0px] leading-[19.6px]">
-              50' Club Yacht
-            </div>
-          </a>
-        </div>
-        <div className="absolute top-[53.2px] left-[0px] w-[137.4px] h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-[137.4px] h-[19.6px] text-[inherit]">
-            <div className="absolute top-[-1px] left-[0px] leading-[19.6px]">
-              43' Giddy Up
-            </div>
-          </a>
-        </div>
-        <div className="absolute top-[79.8px] left-[0px] w-[137.4px] h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-[137.4px] h-[19.6px] text-[inherit]">
-            <div className="absolute top-[-1px] left-[0px] leading-[19.6px]">
-              42' Wanderlust
-            </div>
-          </a>
-        </div>
-        <div className="absolute top-[106.4px] left-[0px] w-[137.4px] h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-[137.4px] h-[19.6px] text-[inherit]">
-            <div className="absolute top-[-1px] left-[0px] leading-[19.6px]">
-              38' Top Shelf
-            </div>
-          </a>
-        </div>
-      </li>
-      <div className="absolute top-[64px] left-[835.1px] leading-[32.5px] font-montserrat text-midnightblue">
-        Helpful Links
-      </div>
-      <li className="absolute top-[116.5px] left-[835.1px] w-56 h-[152.6px] text-sm">
-        <div className="absolute top-[0px] left-[0px] w-56 h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-56 h-[19.6px] text-[inherit]">
-              Home
-          </a>
-        </div>
-        <div className="absolute top-[26.6px] left-[0px] w-56 h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-56 h-[19.6px] text-[inherit]">
-            <div className="absolute top-[1px] left-[0px] leading-[19.6px] flex items-center w-[124.9px] h-[17px]">
-              From the Founders
-            </div>
-          </a>
-        </div>
-        <div className="absolute top-[53.2px] left-[0px] w-56 h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-56 h-[19.6px] text-[inherit]">
-              Fleet
-          </a>
-        </div>
-        <div className="absolute top-[79.8px] left-[0px] w-56 h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-56 h-[19.6px] text-[inherit]">
-              Membership
-          </a>
-        </div>
-        <div className="absolute top-[106.4px] left-[0px] w-56 h-[23.1px]">
-          <a className="[text-decoration:none] absolute top-[0px] left-[0px] w-56 h-[19.6px] text-[inherit]">
-            <div className="absolute top-[-1px] left-[0px] leading-[19.6px]">
-              Membership Brochure
-            </div>
-          </a>
+    <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-10 my-8 lg:my-16">
+      {/* links section */}
+      <div className="flex flex-col md:flex-row gap-8 text-gray-600">
+        <div>
+          <p className="text-midnightblue ">Fleet</p>
+          <ul>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                50' Memory Maker
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                50' Club Yacht
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                43' Giddy Up
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                42' Wanderlust
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                38' Top Shelf
+              </a>
+            </li>
+          </ul>
         </div>
         <div>
-          <a className="[text-decoration:none] absolute top-[133px] left-[0px] w-56 h-[19.6px] text-[inherit]">
-            <div className="absolute top-[1px] left-[0px] leading-[19.6px] flex items-center w-[52.7px] h-[17px]">
-              Contact
-            </div>
-          </a>
+          <p className="text-midnightblue ">Helpful Links</p>
+          <ul>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                From the Founders
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                Fleet
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                Membership
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                Membership Brochure
+              </a>
+            </li>
+            <li>
+              <a href="#" className="cursor-pointer hover:text-midnightblue">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
-      </li>
-      <div className="absolute top-[64px] left-[1120px] leading-[32.5px] font-montserrat text-midnightblue flex items-center w-[99.6px] h-[32.5px]">
-        Contact
+        <div>
+          <p className="text-midnightblue">Contact</p>
+          <ul>
+            <li>
+              <a
+                href="tel:+194125YACHT"
+                className="cursor-pointer hover:text-midnightblue"
+              >
+                (941) 25-YACHT
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+19412592248"
+                className="cursor-pointer hover:text-midnightblue"
+              >
+                (941) 259-2248
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:Info@KokomoYachtClub.vip"
+                className="cursor-pointer hover:text-midnightblue"
+              >
+                Info@KokomoYachtClub.vip
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://maps.google.com/?q=1000 Boulevard of the Arts, Sarasota, FL"
+                target="_blank"
+                className="cursor-pointer hover:text-midnightblue"
+              >
+                1000 Boulevard of the Arts, Sarasota, FL
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="absolute top-[116.5px] left-[1120px] w-60 h-[119px] text-sm">
-        <div className="absolute top-[0px] left-[0px] w-60 h-[23.1px]">
-          <div className="absolute top-[0px] left-[0px] w-60 h-[19.6px]">
-            <div className="absolute top-[1px] left-[0px] leading-[19.6px] flex items-center w-[107.3px] h-[17px]">
-              (941) 25-YACHT
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[26.6px] left-[0px] w-60 h-[23.1px]">
-          <div className="absolute top-[0px] left-[0px] w-60 h-[19.6px]">
-            <div className="absolute top-[1px] left-[0px] leading-[19.6px] flex items-center w-[104.4px] h-[17px]">
-              (941) 259-2248
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[53.2px] left-[0px] w-60 h-[23.1px]">
-          <div className="absolute top-[0px] left-[0px] w-60 h-[19.6px]">
-            <div className="absolute top-[-1px] left-[0px] leading-[19.6px]">
-              Info@KokomoYachtClub.vip
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[79.8px] left-[0px] w-60 h-[39.2px]">
-          <div className="absolute top-[1px] left-[0px] leading-[19.6px] flex items-center w-[181px] h-[36.6px]">
-            <span className="w-full">
-              <p className="m-0">1000 Boulevard of the Arts,</p>
-              <p className="m-0">Sarasota, FL</p>
-            </span>
-          </div>
-        </div>
+
+      {/* logo section */}
+      <div className="flex flex-col items-center gap-4 lg:items-start lg:w-1/2">
+        <Image
+          className="w-[249px] h-[110.1px] object-cover"
+          width={249}
+          height={110}
+          alt=""
+          src="/color3dfull20colorpng@2x.png"
+        />
+        <p className="text-center text-gray-600">
+          SWFL's luxury boat club providing the pure joy of boating without the
+          hassles.
+        </p>
       </div>
     </div>
   );
